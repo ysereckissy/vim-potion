@@ -22,7 +22,7 @@ syntax match potionOperator "\v:"
 syntax match potionOperator "\v\."
 syntax match potionOperator "\v/\."
 
-syntax match potionNumber "\v^[+-]?(\d*|\d{1,3}(,\d{3})*)(\.\d+)?\b$"
+syntax match potionNumber "\v^(-?\d+)(,?\d+)*(\.\d+(e\d+)?)?$"
 syntax match potionNumber "\v0[xX][0-9a-fA-F]+"
 
 highlight link potionKeyword Keyword
