@@ -17,7 +17,6 @@ syntax match potionOperator "\v\*\="
 syntax match potionOperator "\v/\="
 syntax match potionOperator "\v\+\="
 syntax match potionOperator "\v-\="
-" syntax match potionOperator "\v\="
 
 highlight link potionKeyword Keyword
 highlight link potionFunction Function
