@@ -25,8 +25,8 @@ syntax match potionOperator "\v/\."
 syntax match potionNumber "\v^(-?\d+)(,?\d+)*(\.\d+(e\d+)?)?$"
 syntax match potionNumber "\v0[xX][0-9a-fA-F]+"
 
-syntax region potionString start=/\v"/ skip=/\v\\./ end=/\v"/
-syntax region potionString start=/\v'/ skip=/\v\\./ end=/\v'/
+syntax region potionString start=/\v"/ skip=/\v\\+./ end=/\v"/
+syntax region potionString start=/\v'/ skip=/\v\\+./ end=/\v'/
 
 highlight link potionKeyword Keyword
 highlight link potionFunction Function
